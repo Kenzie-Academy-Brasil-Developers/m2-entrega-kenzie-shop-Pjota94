@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumindo API de produtos</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <title>Kenzie News</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/mobile.css">
+    <link rel="stylesheet" href="./src/css/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <h1 id="tittle">Ecommerce template</h1>
-    
-    <h2 id="sub-tittle">Kenzie shop</h2>
-    
-    <div id="container-father">
-        <div id="container-children">
-            
-            
+    <header id="header">
+        <img src="./src/IMG/Logo.png" alt="logoKenzie" width="49px" height="52px">
+    </header>
+
+    <section id="section-desktop">
+        <div class="container-section-desktop">
+            <div class="texts-desktop">
+                <p class="tag-section-desktop">Négocios</p>
+                <h1 class="tittle-section-desktop">Silmara Souza é a nova CMO da Kenzie Academy Brasil</h1>
+                <p class="subtittle-section-desktop">A executiva acumula 15 anos de experiência em branding e comunicação digital.</p>
+                <p class="font-section-desktop">Fonte: Metrópoles</p>
+            </div>
+            <div class="imagem-desktop">
+                <img class="img-section-desktop" src="./src/IMG/imagemDesktop.png" alt="" width="398px" height="360px">
+            </div>
         </div>
+    </section>
+
+    <section id="section-mobile">
+        <div class="container-section">
+        <p class="tag-section">Négocios</p>
+        <h1 class="title-section">Silmara Souza é a nova CMO da Kenzie Academy Brasil</h1>
+        <p class="fonte-section">Fonte: Metrópoles</p>
     </div>
-    <script type="module" src="./src/app.js"></script>
+    </section>
+
+    <article id="article-mobile">
+        <div class="card-article">
+            <p class="tag-article">Négocios</p>
+            <p class="tittle-article">Silmara Souza é a nova CMO da Kenzie Academy Brasil </p>
+            <p class="subtittle-article">A executiva acumula 15 anos de experiência em branding e comunicação digital</p>
+            <p class="fonte-article">Fonte: Metrópoles</p>
+        </div>
+
+    </article>
+
+    <article id="article-desktop">
+        <div class="card-article-desktop">
+            <div class="img-article-desktop">
+                <img class="img-article-desktop" src="./src/IMG/imagemArticle.png" alt="">
+            </div>
+            <div class="texts-article-desktop">
+                <p class="tag-article-desktop">Négocios</p>
+                <p class="tittle-article-desktop">Silmara Souza é a nova CMO da Kenzie Academy Brasil </p>
+                <p class="subtittle-article-desktop">A executiva acumula 15 anos de experiência em branding e comunicação digital</p>
+                <p class="font-article-desktop">Fonte: Metrópoles</p>
+            </div>
+        </div>
+    </article>
+
+    <footer id="footer">
+        <p class="text-footer">Kenzie News | Todos os Direitos Reservados</p>
+    </footer>
+    <script src="./src/script.js"></script>
 </body>
 </html>

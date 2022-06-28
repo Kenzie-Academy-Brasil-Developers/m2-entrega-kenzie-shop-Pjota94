@@ -1,0 +1,201 @@
+@media screen and (min-width : 669px){
+
+/*----Inicio Estilização da Section Desktop----*/
+#header{
+    height: 80px;
+    background: #5163D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+#section-mobile{
+    display: none;
+}
+
+#section-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.container-section-desktop{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+    border-radius: 4px;
+    width: 980px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between
+}
+
+.tag-section-desktop{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5163D3;
+    background: #D7E4FB;
+    border-radius: 4px;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    margin-bottom: 24px;
+    margin-top: 45px;
+    margin-left: 18px;
+}
+
+.tittle-section-desktop{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    color: #5163D3;
+    margin-bottom: 44px;
+    margin-left: 24px;
+}
+
+.subtittle-section-desktop{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 40px;
+    margin-left: 24px;
+}
+
+.font-section-desktop{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1B1C1E;
+    margin-left: 24px;
+}
+
+.img-section-desktop{
+    border-radius: 4px;    
+}
+
+/*----------Fim Estilização da Section----------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/4
+
+/*----Inicio Estilização da Article Desktop----*/
+
+/*Removendo article mobile*/
+#article-mobile{
+    display: none;
+}
+
+.card-article{
+    display: none;
+}
+
+#article-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-article-desktop{
+    width: 569px;
+    height: 180px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+    border-radius: 4px;
+    display: flex;
+    margin-bottom: 60px;
+    margin-right: 40px;
+}
+
+.img-article-desktop{
+
+}
+
+.texts-article-desktop{
+
+}
+
+.img-article-desktop{
+    border-radius: 4px;
+}
+
+.tag-article-desktop{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5163D3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px;
+    width: 67px;
+    height: 18px;
+    background: #D7E4FB;
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.tittle-article-desktop{
+    margin-left: 24px;
+    margin-bottom: 14px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #5163D3;
+}
+
+.subtittle-article-desktop{
+    margin-left: 24px;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1B1C1E;
+}
+
+.font-article-desktop{
+    margin-left: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #1B1C1E;
+}
+}
+
+@media screen and (max-width : 796px){
+    .tittle-section-desktop{
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+        color: #5163D3;
+        margin-bottom: 44px;
+        margin-left: 24px;
+    }
+}
