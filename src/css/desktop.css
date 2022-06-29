@@ -122,7 +122,8 @@
 }
 
 .img-article-desktop{
-
+    width: 180px;
+    height: 180px;
 }
 
 .texts-article-desktop{
@@ -145,7 +146,7 @@
     align-items: center;
     justify-content: center;
     padding: 2px 8px;
-    width: 67px;
+    width: 77px;
     height: 18px;
     background: #D7E4FB;
     border-radius: 4px;
@@ -160,19 +161,18 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 110%;
     color: #5163D3;
 }
 
 .subtittle-article-desktop{
     margin-left: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 11px;
     color: #1B1C1E;
 }
 
