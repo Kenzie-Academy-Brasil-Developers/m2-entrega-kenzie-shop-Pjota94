@@ -29,7 +29,7 @@
     width: 980px;
     height: 360px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .tag-section-desktop{
@@ -113,7 +113,8 @@ a > .textLinkA{
 #article-desktop{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card-article-desktop{
@@ -124,7 +125,7 @@ a > .textLinkA{
     box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
     border-radius: 4px;
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .img-article-desktop{
