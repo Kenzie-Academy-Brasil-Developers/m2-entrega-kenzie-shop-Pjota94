@@ -11,10 +11,11 @@ export class App{
 
     static async requisicaoGet(){
         const result = await this.kenzieNewsGet()
-        result.forEach((elem)=>{
+        for(let i = 1; i < result.length; i++){
+            let elem = result[i]
             App.templateDesktop(elem.imagem,elem.categoria,elem.noticia_completa,elem.titulo,elem.resumo,elem.fonte);
             App.templateMobile(elem.categoria,elem.noticia_completa,elem.titulo,elem.resumo,elem.fonte);
-        })
+        }
     }
 
     static templateDesktop(imagem,categoria,link,titulo,resumo,fonte){
@@ -84,6 +85,74 @@ export class App{
         createDivPai.append(createTag,createLink,createSubtittle,createFont)
         selectArticleMobile.appendChild(createDivPai)
     }
+
+    static async renderizarSection(){
+        const result = await this.kenzieNewsGet()
+        this.templateSectionDesktop(result[0].categoria,result[0].noticia_completa,result[0].titulo,result[0].resumo,result[0].fonte,result[0].imagem)
+        this.templateSectionMobile(result[0].categoria,result[0].noticia_completa,result[0].titulo,result[0].fonte)
+    }
+
+    static templateSectionDesktop(categoria,link,titulo,resumo,font,imagem){
+        const selectSection = document.querySelector('#section-desktop');
+
+        const createContainer = document.createElement('div');
+        createContainer.classList.add('container-section-desktop');
+        const createDivText = document.createElement('div');
+        createDivText.classList.add('texts-desktop');
+        const tag = document.createElement('p');
+        tag.classList.add('tag-section-desktop');
+        tag.innerText = categoria;
+        const createLink      = document.createElement('a');
+        createLink.classList.add('tittle-section-desktop');
+        createLink.href = link;
+        createLink.target = '_blank'
+        const createTittle    = document.createElement('p');
+        createTittle.classList.add('textLinkA');
+        createTittle.innerText = titulo;
+        const createSubtittle = document.createElement('p');
+        createSubtittle.classList.add('subtittle-section-desktop');
+        createSubtittle.innerText = resumo;
+        const createFont      = document.createElement('p');
+        createFont.classList.add('font-section-desktop');
+        createFont.innerText = font;
+        const divImagem = document.createElement('div');
+        divImagem.classList.add('imagem-desktop');
+        const img = document.createElement('img');
+        img.classList.add('img-section-desktop');
+        img.src = imagem;
+
+        createLink.appendChild(createTittle);
+        createDivText.append(tag,createLink,createSubtittle,createFont);
+        divImagem.appendChild(img);
+        createContainer.append(createDivText,divImagem)
+        selectSection.appendChild(createContainer)
+    }
+
+    static templateSectionMobile(categoria,link,titulo,font){
+        const selectSection = document.querySelector('#section-mobile');
+
+        const divContainer = document.createElement('div');
+        divContainer.classList.add('container-section');
+        const tag = document.createElement('p');
+        tag.classList.add('tag-section');
+        tag.innerText = categoria;
+        const createLink = document.createElement('a');
+        createLink.href = link;
+        createLink.target = '_blank';
+        createLink.classList.add('link-section-mobile');
+        const createTittle = document.createElement('h1');
+        createTittle.classList.add('title-section');
+        createTittle.innerText = titulo;
+        const createFont = document.createElement('p');
+        createFont.classList.add('fonte-section');
+        createFont.innerText = font;
+
+        createLink.appendChild(createTittle);
+        divContainer.append(tag,createLink,createFont);
+        selectSection.appendChild(divContainer);
+
+    }
 }
 
 App.requisicaoGet()
+App.renderizarSection()
